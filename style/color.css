@@ -1,0 +1,35 @@
+:root {
+  /* Defaults */
+  --background: rgba(0, 0, 0, 1); /*black*/
+  --offBackground: rgba(25, 25, 25, 1); /*custom*/
+  --inverseBackground: rgba(255, 255, 255, 1); /*white*/
+  --text: rgba(211, 211, 211, 1); /*lightgrey*/
+
+  /* Constants */
+  --tooltipBackground: rgba(50, 50, 50, 1); /*custom*/
+  --tooltipText: rgba(255, 255, 255, 1); /*white*/
+  --navbar: rgba(0, 0, 139, 1); /*darkblue*/
+  --hoverText: rgba(135, 206, 250, 1); /**lightskyblue*/
+  --headerText: rgba(70, 130, 180, 1); /*steelblue*/
+  --clear: rgba(0, 0, 0, 0); /*clear*/
+}
+
+/* Light mode*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: rgba(255, 255, 255, 1); /*white*/
+    --offBackground: rgba(230, 230, 230, 1); /*custom*/
+    --inverseBackground: rgba(0, 0, 0, 1); /*black*/
+    --text: rgba(0, 0, 0, 1); /*black*/
+  }
+}
+
+/* Dark mode [default]*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgba(0, 0, 0, 1); /*black*/
+    --offBackground: rgba(25, 25, 25, 1); /*custom*/
+    --inverseBackground: rgba(255, 255, 255, 1); /*white*/
+    --text: rgba(211, 211, 211, 1); /*lightgrey*/
+  }
+}

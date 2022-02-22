@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Z-Site</title>
+    <link rel="icon" type="image/png" href="./resources/assets/images/favicon_io/favicon.ico" />
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/color.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/mediaQueries.css" />
+
+    <!--Local JS-->
+    <script language="javascript" type="text/javascript" src="./scripts/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a href="../">
+          <img src="./resources/assets/images/favicon_io/android-chrome-512x512.png" alt="Website icon" />
+          <p>IronBatman2715.GitHub.io</p>
+        </a>
+
+        <a class="tooltip-container" href="https://github.com/IronBatman2715/" target="_blank">
+          <img src="./resources/assets/images/socials/white-github.png" alt="Github" />
+          <span>GitHub</span>
+        </a>
+        <a class="tooltip-container" href="https://www.curseforge.com/members/ironbatman2715/projects" target="_blank">
+          <img src="./resources/assets/images/socials/white-curseforge.png" alt="CurseForge" />
+          <span>CurseForge</span>
+        </a>
+
+        <p
+          class="navToggleButton"
+          onclick="document.getElementById(`navToggle`).checked = !document.getElementById(`navToggle`).checked"
+        >
+          ☰
+        </p>
+        <input type="checkbox" id="navToggle" style="display: none" />
+        <nav>
+          <ul>
+            <li><a id="active" href="../">Home</a></li>
+            <!--<li><a href="./discord/">Discord</a></li>-->
+            <li><a href="./d&d/">D&D</a></li>
+            <li><a href="./references/">References</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      id="pageTitleBanner"
+      class="Home"
+      style="background-image: url(./resources/assets/images/pageTitleBackgrounds/home.png)"
+    >
+      <h1 id="pageTitle">Home</h1>
+    </div>
+
+    <div id=""></div>
+
+    <footer></footer>
+  </body>
+</html>
