@@ -6,51 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Z-Site: D&D</title>
-    <link rel="icon" type="image/png" href="../resources/assets/images/favicon_io/favicon.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../resources/assets/images/favicon_io/favicon.ico" />
 
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" media="screen" href="../style/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../style/color.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../style/mediaQueries.css" />
-
-    <!--Local JS-->
-    <script language="javascript" type="text/javascript" src="../scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/components/header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/components/pageTitleBanner.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/components/footer.css" />
   </head>
 
-  <body>
-    <header>
-      <div>
-        <a href="../">
-          <img src="../resources/assets/images/favicon_io/android-chrome-512x512.png" alt="Website icon" />
-          <p>IronBatman2715.GitHub.io</p>
-        </a>
-
-        <a class="tooltip-container" href="https://github.com/IronBatman2715/" target="_blank">
-          <img src="../resources/assets/images/socials/white-github.png" alt="Github" />
-          <span>GitHub</span>
-        </a>
-        <a class="tooltip-container" href="https://www.curseforge.com/members/ironbatman2715/projects" target="_blank">
-          <img src="../resources/assets/images/socials/white-curseforge.png" alt="CurseForge" />
-          <span>CurseForge</span>
-        </a>
-
-        <p
-          class="navToggleButton"
-          onclick="document.getElementById(`navToggle`).checked = !document.getElementById(`navToggle`).checked"
-        >
-          ☰
-        </p>
-        <input type="checkbox" id="navToggle" class="navToggle" style="display: none" />
-        <nav>
-          <ul>
-            <li><a href="../">Home</a></li>
-            <!--<li><a href="../discord/">Discord</a></li>-->
-            <li><a id="active" href="../d&d/">D&D</a></li>
-            <li><a href="../references/">References</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <body v-cloak>
+    <header v-scope="Header({ page: `D&D` })"></header>
 
     <div id="pageTitleBanner" style="background-image: url(../resources/assets/images/pageTitleBackgrounds/d&d.png)">
       <h1 id="pageTitle">D&D</h1>
@@ -105,6 +73,14 @@
       </div>
     </div>
 
-    <footer></footer>
+    <footer v-scope="Footer({ page: `D&D` })"></footer>
+
+    <script type="module">
+      import { createApp } from "https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.es.js";
+
+      import Components from "../scripts/main.js";
+
+      createApp(Components).mount();
+    </script>
   </body>
 </html>
