@@ -42,8 +42,8 @@ header > div > a:first-child p {
 }
 
 header > div > a:not(:first-child) img {
-  max-width: 2rem;
-  max-height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .navToggleButton {

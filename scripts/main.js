@@ -10,6 +10,10 @@ function Header(props) {
             <img :src="icons.github" alt="Github" />
             <span>GitHub</span>
           </a>
+          <!--<a class="tooltip-container" href="" target="_blank">
+            <img :src="icons.discord" alt="Discord" />
+            <span>Discord</span>
+          </a>-->
           <a
             class="tooltip-container"
             href="https://www.curseforge.com/members/ironbatman2715/projects"
@@ -37,9 +41,10 @@ function Header(props) {
         </div>`,
     page: props.page,
     icons: {
-      home: `${this.page === "Home" ? "" : "."}./resources/assets/images/favicon_io/android-chrome-512x512.png`,
-      github: `${this.page === "Home" ? "" : "."}./resources/assets/images/socials/white-github.png`,
-      curseForge: `${this.page === "Home" ? "" : "."}./resources/assets/images/socials/white-curseforge.png`,
+      home: `${this.page === "Home" ? "" : "."}./resources/assets/icons/favicon_io/android-chrome-512x512.png`,
+      github: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/github.svg`,
+      discord: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/discord.svg`,
+      curseForge: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/curseforge.svg`,
     },
     links: {
       discord: `${this.page === "Home" ? "" : "."}./discord`,
