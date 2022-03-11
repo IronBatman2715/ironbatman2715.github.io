@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Z-Site</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="./resources/assets/icons/favicon_io/favicon.ico" />
+		<title>Z-Site</title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="./resources/assets/icons/favicon_io/favicon.ico" />
 
-    <!--Stylesheets-->
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/color.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/mediaQueries.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/components/header.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/components/pageTitleBanner.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/components/footer.css" />
-  </head>
+		<!--Stylesheets-->
+		<link rel="stylesheet" type="text/css" media="screen" href="./style/main.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="./style/color.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="./style/mediaQueries.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="./style/components/header.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="./style/components/pageTitleBanner.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="./style/components/footer.css" />
+	</head>
 
-  <body v-cloak>
-    <header v-scope="Header({ page: `Home` })"></header>
+	<body v-cloak>
+		<header v-scope="Header({ page: `Home` })"></header>
 
-    <div
-      id="pageTitleBanner"
-      class="Home"
-      style="background-image: url(./resources/assets/images/pageTitleBackgrounds/home.png)"
-    >
-      <h1 id="pageTitle">Home</h1>
-    </div>
+		<div
+			id="pageTitleBanner"
+			class="Home"
+			style="background-image: url(./resources/assets/images/pageTitleBackgrounds/home.png)"
+		>
+			<h1 id="pageTitle">Home</h1>
+		</div>
 
-    <div id=""></div>
+		<div id=""></div>
 
-    <footer v-scope="Footer({ page: `Home` })"></footer>
+		<footer v-scope="Footer({ page: `Home` })"></footer>
 
-    <script type="module">
-      import { createApp } from "https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.es.js";
+		<script type="module">
+			import { createApp } from "https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.es.js";
 
-      import Components from "./scripts/main.js";
+			import Components from "./scripts/main.js";
 
-      createApp(Components).mount();
-    </script>
-  </body>
+			createApp(Components).mount();
+		</script>
+	</body>
 </html>

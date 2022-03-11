@@ -1,6 +1,6 @@
 function Header(props) {
-  return {
-    $template: `<div>
+	return {
+		$template: `<div>
           <a href="../">
             <img :src="icons.home" alt="Website icon" />
             <p>IronBatman2715.GitHub.io</p>
@@ -25,7 +25,7 @@ function Header(props) {
 
           <p
             class="navToggleButton"
-            onclick="document.getElementById('navToggle').checked = !document.getElementById('navToggle').checked"
+            @click="document.getElementById('navToggle').checked = !document.getElementById('navToggle').checked"
           >
             ☰
           </p>
@@ -39,26 +39,26 @@ function Header(props) {
             </ul>
           </nav>
         </div>`,
-    page: props.page,
-    icons: {
-      home: `${this.page === "Home" ? "" : "."}./resources/assets/icons/favicon_io/android-chrome-512x512.png`,
-      github: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/github.svg`,
-      discord: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/discord.svg`,
-      curseForge: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/curseforge.svg`,
-    },
-    links: {
-      discord: `${this.page === "Home" ? "" : "."}./discord`,
-      dnd: `${this.page === "Home" ? "" : "."}./d&d`,
-      references: `${this.page === "Home" ? "" : "."}./references`,
-    },
-  };
+		page: props.page,
+		icons: {
+			home: `${this.page === "Home" ? "" : "."}./resources/assets/icons/favicon_io/android-chrome-512x512.png`,
+			github: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/github.svg`,
+			discord: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/discord.svg`,
+			curseForge: `${this.page === "Home" ? "" : "."}./resources/assets/icons/socials/curseforge.svg`,
+		},
+		links: {
+			discord: `${this.page === "Home" ? "" : "."}./discord`,
+			dnd: `${this.page === "Home" ? "" : "."}./d&d`,
+			references: `${this.page === "Home" ? "" : "."}./references`,
+		},
+	};
 }
 
 function Footer(props) {
-  return {
-    $template: ``,
-    page: props.page,
-  };
+	return {
+		$template: ``,
+		page: props.page,
+	};
 }
 
 export default { Header, Footer };
