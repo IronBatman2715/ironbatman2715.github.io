@@ -43,7 +43,9 @@ header > div > a:first-child p {
 	font-size: 1.5em;
 }
 
+header > div > a:not(:first-child),
 header > div > a:not(:first-child) img {
+	align-self: center;
 	width: 2rem;
 	height: 2rem;
 }
