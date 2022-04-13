@@ -50,7 +50,7 @@ header > div > a:not(:first-child) img {
   height: 2rem;
 }
 
-.navToggleButton {
+#navToggleLines {
   color: var(--inverseBackground);
   margin-top: 0;
   margin-bottom: 0;
@@ -98,11 +98,11 @@ nav a {
   text-decoration: underline;
 }
 
-#navToggle:checked ~ nav {
+#navToggleCheckbox:checked ~ nav {
   transform: scale(1, 1);
 }
 
-#navToggle:checked ~ nav a {
+#navToggleCheckbox:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
@@ -119,7 +119,7 @@ nav a {
 }
 
 @media screen and (min-width: 600px) {
-  .navToggleButton {
+  #navToggleLines {
     display: none;
   }
 

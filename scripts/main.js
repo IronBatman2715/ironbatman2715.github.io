@@ -22,13 +22,13 @@ function Header(props) {
           <span>CurseForge</span>
         </a>
 
-        <p
-          class="navToggleButton"
-          @click="document.getElementById('navToggle').checked = !document.getElementById('navToggle').checked"
+        <label
+          for="navToggleCheckbox"
+          id="navToggleLines"
         >
         ☰
-        </p>
-        <input type="checkbox" id="navToggle" style="display: none" />
+        </label>
+        <input type="checkbox" id="navToggleCheckbox" style="display: none" />
         <nav>
           <ul>
             <li><a :class="{active: page === 'Home'}" href="../">Home</a></li>
