@@ -79,9 +79,9 @@ img {
 
 /* End global */
 
-/* Start content */
+/* Start main */
 
-#content {
+main {
   color: var(--text);
 
   display: flex;
@@ -92,30 +92,30 @@ img {
   text-align: center;
 }
 
-#content > div {
+main > section {
   padding: 0.5rem 10vw 1rem 10vw;
 }
 
-#content > div:nth-child(odd) {
+main > section:nth-child(odd) {
   background-color: var(--background);
 }
 
-#content > div:nth-child(even) {
+main > section:nth-child(even) {
   background-color: var(--offBackground);
 }
 
-#content > div > a,
-#content > div > h2 {
+main > section > a,
+main > section > h2 {
   font-size: 2em;
   font-weight: bold;
 }
 
-#content > div > a:hover {
+main > section > a:hover {
   color: var(--hoverText);
 }
 
-#content > div > p {
+main > section > p {
   margin: 1rem 0 0 0;
 }
 
-/* End content */
+/* End main */
