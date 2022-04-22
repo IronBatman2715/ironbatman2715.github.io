@@ -1,0 +1,79 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-8da171b8.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-d5b25428.js",
+      "_paths-396f020f.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      "src/routes/__error.svelte",
+      "src/routes/dnd.svelte",
+      "src/routes/index.svelte",
+      "src/routes/references.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-03775725.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d5b25428.js",
+      "_paths-396f020f.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-14d32332.css"
+    ]
+  },
+  "src/routes/__error.svelte": {
+    "file": "pages/__error.svelte-7926cd18.js",
+    "src": "src/routes/__error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d5b25428.js"
+    ]
+  },
+  "src/routes/dnd.svelte": {
+    "file": "pages/dnd.svelte-a53efa94.js",
+    "src": "src/routes/dnd.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d5b25428.js",
+      "_env-859c48a7.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-88f0c6d9.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d5b25428.js",
+      "_env-859c48a7.js"
+    ]
+  },
+  "src/routes/references.svelte": {
+    "file": "pages/references.svelte-a9e1fcb8.js",
+    "src": "src/routes/references.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d5b25428.js",
+      "_env-859c48a7.js"
+    ]
+  },
+  "_index-d5b25428.js": {
+    "file": "chunks/index-d5b25428.js"
+  },
+  "_paths-396f020f.js": {
+    "file": "chunks/paths-396f020f.js"
+  },
+  "_env-859c48a7.js": {
+    "file": "chunks/env-859c48a7.js"
+  }
+}

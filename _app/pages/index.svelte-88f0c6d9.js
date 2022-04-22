@@ -1,0 +1,1 @@
+import{S as s,i as t,s as r}from"../chunks/index-d5b25428.js";import{d as o,b as n}from"../chunks/env-859c48a7.js";const c=o,d=n,i=!0;class p extends s{constructor(e){super(),t(this,e,null,null,r,{})}}export{p as default,c as hydrate,i as prerender,d as router};
