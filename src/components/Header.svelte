@@ -10,7 +10,7 @@
 <header>
   <div>
     <a href={`${base}/`}>
-      <img src={`${base}/icons/favicon.png`} alt="Website icon" />
+      <img src={`${base}/icons/favicon.svg`} alt="Website icon" />
       <p>IronBatman2715.GitHub.io</p>
     </a>
     <a class="tooltip-container" href="https://github.com/IronBatman2715/" target="_blank">
