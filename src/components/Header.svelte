@@ -9,7 +9,7 @@
 
 <header>
   <div>
-    <a href={base}>
+    <a href={`${base}/`}>
       <img src={`${base}/icons/favicon.png`} alt="Website icon" />
       <p>IronBatman2715.GitHub.io</p>
     </a>
