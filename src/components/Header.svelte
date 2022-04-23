@@ -40,6 +40,14 @@
 </header>
 
 <style>
+  a {
+    color: var(--headerText);
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--headerHoverText);
+  }
   header {
     background-color: var(--navbar);
     margin: 0;
