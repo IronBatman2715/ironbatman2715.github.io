@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="256" height="256" xmlns:v="https://vecta.io/nano">
-    <rect rx="20" width="100%" height="100%" fill="#05a"/>
+    <rect rx="20" width="100%" height="100%" fill="rgb(0,85,170)"/>
     <text x="50%" y="57.5%" font-size="160" font-family="Coda" dominant-baseline="middle" text-anchor="middle" fill="#fff">Z27</text>
     
     <!--Used https://fonts.googleapis.com/css?family=Coda:400,400i,700,700i with https://vecta.io/nano-->
