@@ -15,7 +15,7 @@
 </script>
 
 <section>
-  <h2>My Works</h2>
+  <h2 id="my-works">My Works</h2>
   <ul class="textAlignLeft">
     <li>My GitHub repositories</li>
     <li>
@@ -40,7 +40,7 @@
   </ul>
 </section>
 <section>
-  <h2>References</h2>
+  <h2 id="references">References</h2>
   <p class="textAlignLeft">
     Other than <b><em>specifically enumerated</em></b> items under "My Works", I do <b><em>NOT</em></b> own any of the media
     (pictures, documents, code, etc.) linked to or provided on this site. Below is a list of links to media used.
@@ -49,7 +49,7 @@
     <li>
       Home page:
       <a
-        href="https://www.wallpaperflare.com/body-of-water-digital-art-nature-landscape-clouds-sergey-zabelin-wallpaper-qldp/download/1920x1080"
+        href="https://www.wallpaperflare.com/body-of-water-digital-art-nature-landscape-clouds-sergey-zabelin-wallpaper-qldp/"
         target="_blank">background</a
       >
     </li>
@@ -68,6 +68,13 @@
           <a href="https://codepen.io/evertras/full/YVVeMd/" target="_blank">Basis of Stenograph</a>
         </li>
       </ul>
+    </li>
+    <li>
+      References:
+      <a
+        href="https://www.wallpaperflare.com/opened-book-black-reference-concept-background-guidebook-wallpaper-zlsdx/"
+        target="_blank">background</a
+      >
     </li>
   </ul>
 </section>
