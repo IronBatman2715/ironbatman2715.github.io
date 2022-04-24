@@ -15,8 +15,10 @@
 </script>
 
 <section>
-  <a href="https://drive.google.com/drive/folders/1yMdMG0g1rOsjeEt3NbOXM_V1cbrWtS98" target="_blank"
-    >My D&D Google Drive</a
+  <a
+    id="dnd-google-drive"
+    href="https://drive.google.com/drive/folders/1yMdMG0g1rOsjeEt3NbOXM_V1cbrWtS98"
+    target="_blank">My D&D Google Drive</a
   >
   <p>
     My Google drive is full of almost all of the official D&D books in PDF form and character sheet templates (many with
@@ -28,7 +30,7 @@
   </p>
 </section>
 <section>
-  <a href="https://ironbatman2715.github.io/DND-Stenograph/" target="_blank">Stenograph</a>
+  <a id="dnd-stenograph" href="https://ironbatman2715.github.io/DND-Stenograph/" target="_blank">Stenograph</a>
   <p>
     Stenograph is an
     <a href="https://github.com/IronBatman2715/DND-Stenograph" target="_blank">open-source</a>
@@ -38,8 +40,10 @@
   </p>
 </section>
 <section>
-  <a href="https://drive.google.com/file/d/1I57xwVzF9fVRfcwG-rOA9XOlbxBF9ntM/view" target="_blank"
-    >Player's General Rules</a
+  <a
+    id="players-general-rules"
+    href="https://drive.google.com/file/d/1I57xwVzF9fVRfcwG-rOA9XOlbxBF9ntM/view"
+    target="_blank">Player's General Rules</a
   >
   <p>
     The Player's General Rules is written by me with the intention of putting all the most commonly referenced D&D rules
@@ -53,7 +57,7 @@
   </p>
 </section>
 <section>
-  <a href="https://www.subclassguide.com/" target="_blank">SubclassGuide.com</a>
+  <a id="subclass-guide" href="https://www.subclassguide.com/" target="_blank">SubclassGuide.com</a>
   <p>
     A web app that allows you to view all official Races(and their Subraces) as well as Backgrounds. You can then toggle
     each source book so you can only view from a subset of the total.
