@@ -9,7 +9,7 @@
 <div
   id="pageTitleBanner"
   class={currentPage.name}
-  style={`background-image: url(${base}/pageTitleBanners/${currentPage.subURL || "home"}.png)`}
+  style={`background-image: url(${base}/pageTitleBanners/${currentPage.subURL || "home"}.webp)`}
 >
   <h1 id="pageTitle">{currentPage.name}</h1>
 </div>
