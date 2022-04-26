@@ -6,7 +6,6 @@
 
   import Header from "$components/Header.svelte";
   import Footer from "$components/Footer.svelte";
-  import PageTitleBanner from "$components/PageTitleBanner.svelte";
 
   import pages from "$utils/pageData";
 
@@ -19,8 +18,6 @@
 </svelte:head>
 
 <Header {currentPage} />
-
-<PageTitleBanner {currentPage} />
 
 {#if ($page.routeId || "") === ""}
   <slot />
