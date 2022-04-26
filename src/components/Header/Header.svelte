@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { PageData } from "$utils/pageData";
-  import Navbar from "$components/Navbar.svelte";
-  import PageTitleBanner from "$components/PageTitleBanner.svelte";
+
+  import Navbar from "./Navbar.svelte";
+  import PageTitleBanner from "./PageTitleBanner.svelte";
 
   export let currentPage: PageData;
 </script>
