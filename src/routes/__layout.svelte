@@ -7,10 +7,21 @@
   import Header from "$components/Header.svelte";
   import Footer from "$components/Footer.svelte";
 
+  import type { PageData } from "$utils/pageData";
   import pages from "$utils/pageData";
 
+  let currentPage: PageData;
+
   $: currentSubURL = $page.routeId || "";
-  $: currentPage = pages.filter((page) => page.subURL === currentSubURL)[0];
+  $: {
+    const filteredPages = pages.filter((page) => page.subURL === currentSubURL);
+
+    if (filteredPages.length === 1) {
+      currentPage = filteredPages[0];
+    } else {
+      console.error("Cannot fetch page data!");
+    }
+  }
 </script>
 
 <svelte:head>
@@ -19,7 +30,7 @@
 
 <Header {currentPage} />
 
-{#if ($page.routeId || "") === ""}
+{#if currentSubURL === ""}
   <slot />
 {:else}
   <main id="content">
