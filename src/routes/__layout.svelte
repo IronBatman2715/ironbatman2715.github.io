@@ -25,7 +25,7 @@
 {#if ($page.routeId || "") === ""}
   <slot />
 {:else}
-  <main>
+  <main id="content">
     <slot />
   </main>
 {/if}
