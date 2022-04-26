@@ -53,7 +53,7 @@ img {
   margin: 0 !important;
 
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 100%;
   left: -100%;
 
@@ -75,6 +75,7 @@ img {
 .tooltip-container:hover > span,
 .tooltip-container:focus > span {
   opacity: 1;
+  z-index: 1;
 }
 
 /* End global */
