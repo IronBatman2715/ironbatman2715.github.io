@@ -26,8 +26,7 @@ const config = {
       resolve: {
         alias: {
           $lib: resolve("./src/lib"),
-          $components: resolve("./src/components"),
-          $utils: resolve("./src/utils"),
+          "@": resolve("./src"),
         },
       },
     },

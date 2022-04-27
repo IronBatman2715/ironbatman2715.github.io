@@ -1,7 +1,7 @@
 <script lang="ts">
   import { base } from "$app/paths";
 
-  import type { PageData } from "$utils/pageData";
+  import type { PageData } from "@/utils/pageData";
 
   export let currentPage: PageData;
 </script>
