@@ -1,6 +1,4 @@
 <script lang="ts">
-  import type { PageData } from "@/utils/pageData";
-
   import Navbar from "./Navbar.svelte";
   import PageTitleBanner from "./PageTitleBanner.svelte";
 

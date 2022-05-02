@@ -1,7 +1,6 @@
 <script lang="ts">
   import { base } from "$app/paths";
 
-  import type { PageData } from "@/utils/pageData";
   import pages from "@/utils/pageData";
 
   export let currentPage: PageData;
