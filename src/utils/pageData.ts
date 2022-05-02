@@ -1,9 +1,4 @@
-type PageData = {
-  name: string;
-  subURL: string;
-};
-
-const pages: PageData[] = [
+export const pages: PageData[] = [
   {
     name: "Home",
     subURL: "",
@@ -18,6 +13,4 @@ const pages: PageData[] = [
   },
 ];
 
-export type { PageData };
-export { pages };
 export default pages;

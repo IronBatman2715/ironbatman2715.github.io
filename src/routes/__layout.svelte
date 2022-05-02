@@ -7,7 +7,6 @@
   import Header from "@/components/Header/Header.svelte";
   import Footer from "@/components/Footer.svelte";
 
-  import type { PageData } from "@/utils/pageData";
   import pages from "@/utils/pageData";
 
   let currentPage: PageData;
