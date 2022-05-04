@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { getRelativeURL } from "@/utils/misc";
 
   import pages from "@/utils/pageData";
 
@@ -7,20 +7,20 @@
 </script>
 
 <div>
-  <a href={`${base}/`}>
-    <img src={`${base}/icons/favicon.svg`} alt="Website icon" />
+  <a href={getRelativeURL()}>
+    <img src={getRelativeURL("icons/favicon.svg")} alt="Website icon" />
     <p>IronBatman2715.GitHub.io</p>
   </a>
   <a class="tooltip-container" href="https://github.com/IronBatman2715/" target="_blank">
-    <img src={`${base}/icons/github.svg`} alt="Github" />
+    <img src={getRelativeURL("icons/github.svg")} alt="Github" />
     <span>GitHub</span>
   </a>
   <!--<a class="tooltip-container" href="" target="_blank">
-          <img src={`${base}/icons/discord.svg`} alt="Discord" />
+          <img src={getRelativeURL("icons/discord.svg")} alt="Discord" />
           <span>Discord</span>
         </a>-->
   <a class="tooltip-container" href="https://www.curseforge.com/members/ironbatman2715/projects" target="_blank">
-    <img src={`${base}/icons/curseforge.svg`} alt="CurseForge" />
+    <img src={getRelativeURL("icons/curseforge.svg")} alt="CurseForge" />
     <span>CurseForge</span>
   </a>
   <label for="navToggleCheckbox" id="navToggleLines">☰</label>
@@ -29,7 +29,7 @@
     <ul>
       {#each pages as { name, subURL }}
         <li>
-          <a class={subURL === currentPage.subURL ? "active" : ""} href={`${base}/${subURL}`}>{name}</a>
+          <a class={subURL === currentPage.subURL ? "active" : ""} href={getRelativeURL(subURL)}>{name}</a>
         </li>
       {/each}
     </ul>

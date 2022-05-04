@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
-
+  import { getRelativeURL } from "@/utils/misc";
 
   export let currentPage: PageData;
 </script>
@@ -8,7 +7,7 @@
 <div
   id="pageTitleBanner"
   class={currentPage.name}
-  style={`background-image: url(${base}/pageTitleBanners/${currentPage.subURL || "home"}.webp)`}
+  style={`background-image: url(${getRelativeURL(`/pageTitleBanners/${currentPage.subURL || "home"}.webp`)})`}
 >
   <h1 id="pageTitle">{currentPage.name}</h1>
 </div>
