@@ -25,6 +25,7 @@
 
 <svelte:head>
   <title>{`Z-Site${currentPage.subURL !== "" ? `: ${currentPage.name}` : ``}`}</title>
+  <meta name="description" content={currentPage.description} />
 </svelte:head>
 
 <Header {currentPage} />

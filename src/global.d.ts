@@ -3,4 +3,5 @@
 type PageData = {
   name: string;
   subURL: string;
+  description: string;
 };
