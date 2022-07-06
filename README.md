@@ -1,5 +1,7 @@
 # Z-Site
 
+[![](https://img.shields.io/github/license/IronBatman2715/ironbatman2715.github.io.svg?branch=main)](https://github.com/IronBatman2715/ironbatman2715.github.io/blob/main/LICENSE)
+
 **[My personal website](https://ironbatman2715.github.io/) for displaying my works or linking to other relevant sites.**
 
 - A static site generator (SSG) built with [SvelteKit](https://kit.svelte.dev/) and [TypeScript](https://www.typescriptlang.org/)
