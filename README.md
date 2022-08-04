@@ -1,6 +1,7 @@
 # Z-Site
 
 [![](https://img.shields.io/github/license/IronBatman2715/ironbatman2715.github.io.svg?branch=main)](https://github.com/IronBatman2715/ironbatman2715.github.io/blob/main/LICENSE)
+[![](https://github.com/IronBatman2715/ironbatman2715.github.io/actions/workflows/buildAndDeploy.yml/badge.svg?branch=main)](https://github.com/IronBatman2715/ironbatman2715.github.io/blob/main/.github/workflows/buildAndDeploy.yml)
 
 **[My personal website](https://ironbatman2715.github.io/) for displaying my works or linking to other relevant sites.**
 
