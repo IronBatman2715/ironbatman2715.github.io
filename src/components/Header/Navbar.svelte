@@ -11,15 +11,20 @@
     <img src={getRelativeURL("icons/favicon.svg")} alt="Website icon" />
     <p>IronBatman2715.GitHub.io</p>
   </a>
-  <a class="tooltip-container" href="https://github.com/IronBatman2715/" target="_blank">
+  <a class="tooltip-container" href="https://github.com/IronBatman2715/" rel="noreferrer" target="_blank">
     <img src={getRelativeURL("icons/github.svg")} alt="Github" />
     <span>GitHub</span>
   </a>
-  <!--<a class="tooltip-container" href="" target="_blank">
-          <img src={getRelativeURL("icons/discord.svg")} alt="Discord" />
-          <span>Discord</span>
-        </a>-->
-  <a class="tooltip-container" href="https://www.curseforge.com/members/ironbatman2715/projects" target="_blank">
+  <!-- <a class="tooltip-container" href="" rel="noreferrer" target="_blank">
+    <img src={getRelativeURL("icons/discord.svg")} alt="Discord" />
+    <span>Discord</span>
+  </a> -->
+  <a
+    class="tooltip-container"
+    href="https://www.curseforge.com/members/ironbatman2715/projects"
+    rel="noreferrer"
+    target="_blank"
+  >
     <img src={getRelativeURL("icons/curseforge.svg")} alt="CurseForge" />
     <span>CurseForge</span>
   </a>
