@@ -9,14 +9,13 @@ const config = {
 
   kit: {
     adapter: adapter({
-      pages: "build",
-      assets: "build",
+      precompress: true,
     }),
     alias: {
-      "@": "src",
+      "@/*": "src/*",
     },
     paths: {
-      // base: process.env.NODE_ENV === "production" ? "/your-repo-here" : "",
+      // base: process.argv.includes("dev") ? "" : "/your-repo-name",
     },
   },
 };
