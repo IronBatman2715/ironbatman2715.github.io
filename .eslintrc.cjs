@@ -20,6 +20,9 @@ module.exports = {
       parserOptions: {
         parser: "@typescript-eslint/parser",
       },
+      rules: {
+        "no-undef": "off", // https://typescript-eslint.io/linting/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+      },
     },
   ],
 };
