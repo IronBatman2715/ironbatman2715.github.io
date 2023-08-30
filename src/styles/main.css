@@ -58,7 +58,7 @@ img {
   left: -100%;
 
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: ease-in 0.2s 0.1s;
 }
 
 .tooltip-container > span::before {
@@ -76,6 +76,7 @@ img {
 .tooltip-container:focus > span {
   opacity: 1;
   z-index: 1;
+  transition-delay: 0.3s;
 }
 
 /* End global */
