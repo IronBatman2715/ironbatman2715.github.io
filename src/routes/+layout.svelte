@@ -13,14 +13,12 @@
 
   $: {
     const currentSubURL = $page.route.id || "";
-    const filteredPages = pages.filter(
-      (page) => page.subURL === currentSubURL || page.subURL === currentSubURL.substring(1)
-    );
+    const filteredPages = pages.filter((page) => page.subURL === currentSubURL.substring(1));
 
     if (filteredPages.length === 1) {
       currentPage = filteredPages[0];
     } else {
-      throw new ReferenceError(`Cannot fetch page data! Add entry for "/${currentSubURL}" in src/utils/pageData.ts`);
+      throw new ReferenceError(`Cannot fetch page data! Add entry for "${currentSubURL}" in src/utils/pageData.ts`);
     }
   }
 </script>
