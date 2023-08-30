@@ -4,6 +4,15 @@
   import pages from "@/utils/pageData";
 
   export let currentPage: PageData;
+
+  /** Reset the navbar checkbox to close it for small screens.
+   *
+   * Only runs on client during hydration(subsequent page loads after initial page load with javascript enabled).
+   *
+   * Not needed for pure SSR (no hydration) as the full page load will reset for us. */
+  function resetNavToggle() {
+    document.getElementById("navToggleCheckbox")?.click();
+  }
 </script>
 
 <div>
@@ -34,7 +43,13 @@
     <ul>
       {#each pages as { name, subURL }}
         <li>
-          <a class={subURL === currentPage.subURL ? "active" : ""} href={getRelativeURL(subURL)}>{name}</a>
+          <a
+            class={subURL === currentPage.subURL ? "active" : ""}
+            href={getRelativeURL(subURL)}
+            on:click={resetNavToggle}
+          >
+            {name}
+          </a>
         </li>
       {/each}
     </ul>
