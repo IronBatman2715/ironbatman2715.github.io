@@ -21,11 +21,11 @@
     <p>IronBatman2715.GitHub.io</p>
   </a>
   <a class="tooltip-container" href="https://github.com/IronBatman2715/" rel="noreferrer" target="_blank">
-    <img src={getRelativeURL("icons/github.svg")} alt="Github" />
+    <img src={getRelativeURL("icons/github.svg")} alt="GitHub icon" />
     <span>GitHub</span>
   </a>
   <!-- <a class="tooltip-container" href="" rel="noreferrer" target="_blank">
-    <img src={getRelativeURL("icons/discord.svg")} alt="Discord" />
+    <img src={getRelativeURL("icons/discord.svg")} alt="Discord icon" />
     <span>Discord</span>
   </a> -->
   <a
@@ -34,7 +34,7 @@
     rel="noreferrer"
     target="_blank"
   >
-    <img src={getRelativeURL("icons/curseforge.svg")} alt="CurseForge" />
+    <img src={getRelativeURL("icons/curseforge.svg")} alt="CurseForge icon" />
     <span>CurseForge</span>
   </a>
   <label for="navToggleCheckbox" id="navToggleLines">☰</label>
