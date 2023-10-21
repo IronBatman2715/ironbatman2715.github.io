@@ -104,7 +104,7 @@
     transition: transform 200ms ease-in-out;
 
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   div > a:not(:first-child),
