@@ -37,7 +37,11 @@
     margin: 0;
     padding: 1em 0em;
     color: white;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    text-shadow:
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black;
     text-align: center;
     font-size: 20vmin;
   }
