@@ -6,7 +6,7 @@
 **[My personal website](https://ironbatman2715.github.io/) for displaying my works or linking to other relevant sites.**
 
 - A static site generator (SSG) built with [SvelteKit](https://kit.svelte.dev/) and [TypeScript](https://www.typescriptlang.org/)
-- Automatic build and deploy to [Github Pages](https://pages.github.com/) with a custom [Github Actions](https://github.com/features/actions) workflow
+- Automatic build and deploy to [GitHub Pages](https://pages.github.com/) with a custom [GitHub Actions](https://github.com/features/actions) workflow
 - Fully functional with _or_ without JavaScript enabled in the client's browser
 
 ## Cloning/Forking Notes

@@ -2,7 +2,7 @@ export const pages: PageData[] = [
   {
     name: "Home",
     subURL: "",
-    description: "Home page of Github pages personal website.",
+    description: "Home page of GitHub pages personal website.",
   },
   {
     name: "D&D",
