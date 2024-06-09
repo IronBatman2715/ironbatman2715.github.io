@@ -8,12 +8,6 @@
       (with the exception of external libraries, of course).
     </li>
     <li>
-      Text content of
-      <a href="https://drive.google.com/file/d/1I57xwVzF9fVRfcwG-rOA9XOlbxBF9ntM/view" rel="noreferrer" target="_blank"
-        >Player's General Rules</a
-      >.
-    </li>
-    <li>
       Content of every folder in
       <a
         href="https://drive.google.com/drive/folders/1yMdMG0g1rOsjeEt3NbOXM_V1cbrWtS98"

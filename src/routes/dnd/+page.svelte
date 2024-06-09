@@ -27,24 +27,6 @@
   </p>
 </section>
 <section>
-  <a
-    id="players-general-rules"
-    href="https://drive.google.com/file/d/1I57xwVzF9fVRfcwG-rOA9XOlbxBF9ntM/view"
-    rel="noreferrer"
-    target="_blank">Player's General Rules</a
-  >
-  <p>
-    The Player's General Rules is written by me with the intention of putting all the most commonly referenced D&D rules
-    and my favorite variant rules in one place. Unless otherwise stated or specific to the campaign, these are the rules
-    I defer to when I DM.
-    <br /><br />
-    I recommend you download it and use the header/bookmark feature of PDFs. Otherwise it can be cumbersome to navigate.
-    <br /><br />
-    The only topic I do not cover in this document is character creation. Other than using the documents in my Google Drive,
-    keep scrolling on this webpage for more information on character creation!
-  </p>
-</section>
-<section>
   <a id="subclass-guide" href="https://www.subclassguide.com/" rel="noreferrer" target="_blank">SubclassGuide.com</a>
   <p>
     A web app that allows you to view all official Races(and their Subraces) as well as Backgrounds. You can then toggle
