@@ -27,9 +27,6 @@
   </p>
 </section>
 <section>
-  <a id="subclass-guide" href="https://www.subclassguide.com/" rel="noreferrer" target="_blank">SubclassGuide.com</a>
-  <p>
-    A web app that allows you to view all official Races(and their Subraces) as well as Backgrounds. You can then toggle
-    each source book so you can only view from a subset of the total.
-  </p>
+  <a id="dnd-5e-wiki" href="http://dnd5e.wikidot.com/" rel="noreferrer" target="_blank">DND 5E Community Wiki</a>
+  <p>A community driven wiki for all things D&D 5th edition.</p>
 </section>
