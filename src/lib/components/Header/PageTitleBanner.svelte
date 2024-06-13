@@ -7,7 +7,7 @@
 <div
   id="pageTitleBanner"
   class={currentPage.name}
-  style={`background-image: url(${getRelativeURL(`/pageTitleBanners/${currentPage.subURL || "home"}.webp`)})`}
+  style={`background-image: url(${getRelativeURL(`pageTitleBanners/${currentPage.subURL || "home"}.webp`)})`}
 >
   <h1 id="pageTitle">{currentPage.name}</h1>
 </div>
