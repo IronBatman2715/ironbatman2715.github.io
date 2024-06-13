@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { getRelativeURL } from "@/utils/misc";
-
-  import pages from "@/utils/pageData";
+  import { getRelativeURL } from "$lib/utils/misc";
+  import pages from "$lib/utils/pageData";
 
   export let currentPage: PageData;
 

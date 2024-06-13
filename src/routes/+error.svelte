@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getRelativeURL } from "@/utils/misc";
+  import { getRelativeURL } from "$lib/utils/misc";
 
   console.error("Invalid sub-url entered, redirecting to home page.");
 </script>

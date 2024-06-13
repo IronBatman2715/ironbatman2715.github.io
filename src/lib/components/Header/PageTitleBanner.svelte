@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getRelativeURL } from "@/utils/misc";
+  import { getRelativeURL } from "$lib/utils/misc";
 
   export let currentPage: PageData;
 </script>

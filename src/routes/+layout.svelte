@@ -1,13 +1,13 @@
 <script lang="ts">
   import { page } from "$app/stores";
 
-  import "@/styles/color.css";
-  import "@/styles/main.css";
+  import "$lib/styles/color.css";
+  import "$lib/styles/main.css";
 
-  import Header from "@/components/Header/Header.svelte";
-  import Footer from "@/components/Footer.svelte";
+  import Header from "$lib/components/Header/Header.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 
-  import pages from "@/utils/pageData";
+  import pages from "$lib/utils/pageData";
 
   let currentPage: PageData;
 
