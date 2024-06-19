@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { getRelativeURL } from "$lib/utils/misc";
-  import pages from "$lib/utils/pageData";
+  import { pageMetadatas, getRelativeURL, type PageMetadata } from "$lib/utils/routing";
 
-  export let currentPage: PageData;
+  export let pageMetadata: PageMetadata;
 
   /** Reset the navbar checkbox to close it for small screens.
    *
@@ -40,10 +39,10 @@
   <input type="checkbox" id="navToggleCheckbox" style="display: none" />
   <nav>
     <ul>
-      {#each pages as { name, subURL }}
+      {#each pageMetadatas as { name, subURL }}
         <li>
           <a
-            class={subURL === currentPage.subURL ? "active" : ""}
+            class={subURL === pageMetadata.subURL ? "active" : ""}
             href={getRelativeURL(subURL)}
             on:click={resetNavToggle}
           >

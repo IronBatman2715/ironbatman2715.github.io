@@ -6,31 +6,29 @@
 
   import Header from "$lib/components/Header/Header.svelte";
   import Footer from "$lib/components/Footer.svelte";
+  import { getPageMetadataBySubURL, type PageMetadata } from "$lib/utils/routing";
 
-  import pages from "$lib/utils/pageData";
-
-  let currentPage: PageData;
-
+  let pageMetadata: PageMetadata;
   $: {
     const currentSubURL = $page.route.id || "";
-    const filteredPages = pages.filter((page) => page.subURL === currentSubURL.substring(1));
 
-    if (filteredPages.length === 1) {
-      currentPage = filteredPages[0];
+    const maybePageMetadata = getPageMetadataBySubURL(currentSubURL);
+    if (maybePageMetadata) {
+      pageMetadata = maybePageMetadata;
     } else {
-      throw new ReferenceError(`Cannot fetch page data! Add entry for "${currentSubURL}" in src/utils/pageData.ts`);
+      throw new ReferenceError(`Cannot fetch page metadata! Add entry for "${currentSubURL}" in src/utils/routing.ts`);
     }
   }
 </script>
 
 <svelte:head>
-  <title>{`Z-Site${currentPage.subURL === "" ? `` : `: ${currentPage.name}`}`}</title>
-  <meta name="description" content={currentPage.description} />
+  <title>{`Z-Site${pageMetadata.subURL === "" ? `` : `: ${pageMetadata.name}`}`}</title>
+  <meta name="description" content={pageMetadata.description} />
 </svelte:head>
 
-<Header {currentPage} />
+<Header {pageMetadata} />
 
-{#if currentPage.subURL !== ""}
+{#if pageMetadata.subURL !== ""}
   <main id="content">
     <slot />
   </main>

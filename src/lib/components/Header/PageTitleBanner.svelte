@@ -1,15 +1,15 @@
 <script lang="ts">
-  import { getRelativeURL } from "$lib/utils/misc";
+  import { getRelativeURL, type PageMetadata } from "$lib/utils/routing";
 
-  export let currentPage: PageData;
+  export let pageMetadata: PageMetadata;
 </script>
 
 <div
   id="pageTitleBanner"
-  class={currentPage.name}
-  style={`background-image: url(${getRelativeURL(`pageTitleBanners/${currentPage.subURL || "home"}.webp`)})`}
+  class={pageMetadata.name}
+  style={`background-image: url(${getRelativeURL(`pageTitleBanners/${pageMetadata.subURL || "home"}.webp`)})`}
 >
-  <h1 id="pageTitle">{currentPage.name}</h1>
+  <h1 id="pageTitle">{pageMetadata.name}</h1>
 </div>
 
 <style>

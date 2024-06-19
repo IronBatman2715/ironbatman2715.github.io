@@ -1,13 +1,14 @@
 <script lang="ts">
+  import type { PageMetadata } from "$lib/utils/routing";
   import Navbar from "./Navbar.svelte";
   import PageTitleBanner from "./PageTitleBanner.svelte";
 
-  export let currentPage: PageData;
+  export let pageMetadata: PageMetadata;
 </script>
 
-<header class={currentPage.name}>
-  <Navbar {currentPage} />
-  <PageTitleBanner {currentPage} />
+<header class={pageMetadata.name}>
+  <Navbar {pageMetadata} />
+  <PageTitleBanner {pageMetadata} />
 </header>
 
 <style>
