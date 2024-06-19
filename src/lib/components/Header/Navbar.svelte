@@ -16,7 +16,7 @@
 
 <div>
   <a href={getRelativeURL()}>
-    <img src={getRelativeURL("icons/favicon.svg")} alt="Website icon" />
+    <img src={getRelativeURL("icons/favicon/favicon.svg")} alt="Website icon" />
     <p>IronBatman2715.GitHub.io</p>
   </a>
   <a class="tooltip-container" href="https://github.com/IronBatman2715/" rel="noreferrer" target="_blank">
