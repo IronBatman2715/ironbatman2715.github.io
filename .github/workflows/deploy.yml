@@ -28,9 +28,18 @@ jobs:
       - name: Install node packages
         run: npm ci
 
+      - name: Setup env var(s)
+        run: |
+          # TODO: Refactor conditional to be more robust
+          if [[ "${{ github.event.repository.name }}" =~ ^.*\.github\.io$ ]]; then
+            # Leave blank for GitHub Pages base URI path
+            echo "BASE_PATH=" >> $GITHUB_ENV
+          else
+            # Otherwise, prepend repository name
+            echo "BASE_PATH=/${{ github.event.repository.name }}" >> $GITHUB_ENV
+          fi
+
       - name: Build website
-        env:
-          BASE_PATH: "/${{ github.event.repository.name }}"
         run: npm run build
 
       - name: Upload build artifact
