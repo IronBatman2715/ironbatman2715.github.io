@@ -8,6 +8,7 @@
 - A static site generator (SSG) built with [SvelteKit](https://kit.svelte.dev/) and [TypeScript](https://www.typescriptlang.org/)
 - Automatic build and deploy to [GitHub Pages](https://pages.github.com/) with a custom [GitHub Actions](https://github.com/features/actions) workflow
 - Fully functional with _or_ without JavaScript enabled in the client's browser
+- Features client side router when JavaScript is enabled for clean transitions between routes
 
 ## Cloning/Forking Notes
 
