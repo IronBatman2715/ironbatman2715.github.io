@@ -39,7 +39,7 @@
   <input type="checkbox" id="navToggleCheckbox" style="display: none" />
   <nav>
     <ul>
-      {#each pageMetadatas as { name, subURL }}
+      {#each pageMetadatas as { name, subURL } (subURL)}
         <li>
           <a
             class={subURL === pageMetadata.subURL ? "active" : ""}
