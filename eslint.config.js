@@ -13,9 +13,9 @@ export default tsEslint.config(
   includeIgnoreFile(gitignorePath),
   eslint.configs.recommended,
   ...tsEslint.configs.recommended,
-  ...svelte.configs["flat/recommended"],
+  ...svelte.configs.recommended,
   prettier,
-  ...svelte.configs["flat/prettier"],
+  ...svelte.configs.prettier,
   {
     languageOptions: {
       globals: {
