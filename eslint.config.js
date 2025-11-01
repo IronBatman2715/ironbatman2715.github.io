@@ -3,13 +3,14 @@ import eslint from "@eslint/js";
 import { includeIgnoreFile } from "@eslint/compat";
 import svelte from "eslint-plugin-svelte";
 import globals from "globals";
+import { defineConfig } from "eslint/config";
 import { fileURLToPath } from "node:url";
 import tsEslint from "typescript-eslint";
 import svelteConfig from "./svelte.config.js";
 
 const gitignorePath = fileURLToPath(new URL("./.gitignore", import.meta.url));
 
-export default tsEslint.config(
+export default defineConfig(
   includeIgnoreFile(gitignorePath),
   eslint.configs.recommended,
   ...tsEslint.configs.recommended,
@@ -23,7 +24,11 @@ export default tsEslint.config(
         ...globals.node,
       },
     },
-    rules: { "no-undef": "off" },
+    rules: {
+      // typescript-eslint strongly recommend that you do not use the no-undef lint rule on TypeScript projects.
+      // see: https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+      "no-undef": "off",
+    },
   },
   {
     files: ["**/*.svelte", "**/*.svelte.ts", "**/*.svelte.js"],

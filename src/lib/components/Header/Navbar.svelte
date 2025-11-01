@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
+
   import { pageMetadatas, getRelativeURL, type PageMetadata } from "$lib/utils/routing";
 
   export let pageMetadata: PageMetadata;
@@ -14,7 +16,7 @@
 </script>
 
 <div>
-  <a href={getRelativeURL()}>
+  <a href={resolve(getRelativeURL())}>
     <img src={getRelativeURL("icons/favicon/favicon.svg")} alt="Website icon" />
     <p>IronBatman2715.GitHub.io</p>
   </a>
@@ -43,7 +45,7 @@
         <li>
           <a
             class={subURL === pageMetadata.subURL ? "active" : ""}
-            href={getRelativeURL(subURL)}
+            href={resolve(getRelativeURL(subURL))}
             on:click={resetNavToggle}
           >
             {name}
