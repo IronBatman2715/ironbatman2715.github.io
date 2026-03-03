@@ -22,8 +22,8 @@
     Stenograph is an
     <a href="https://github.com/IronBatman2715/DND-Stenograph" rel="noreferrer" target="_blank">open-source</a>
     web app that simulates a D&D character sheet. Click the link above to open it in a new tab! <br /><br />
-    Don't forget to save your character once you've made it! Stenograph will save your character data as a JSON. Hold on
-    to this file and then simply click load and upload the JSON to view it again later.
+    Don't forget to save your character once you've made it! Stenograph will save your character data as a JSON. Hold on to
+    this file and then simply click load and upload the JSON to view it again later.
   </p>
 </section>
 <section>
