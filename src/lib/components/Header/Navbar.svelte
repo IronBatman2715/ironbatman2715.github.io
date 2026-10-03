@@ -1,9 +1,7 @@
 <script lang="ts">
-  import { resolve } from "$app/paths";
+  import { pageMetadatas, getRelativeURL, type PageMetadata } from "#lib/utils/routing.js";
 
-  import { pageMetadatas, getRelativeURL, type PageMetadata } from "$lib/utils/routing";
-
-  export let pageMetadata: PageMetadata;
+  let { pageMetadata }: { pageMetadata: PageMetadata } = $props();
 
   /** Reset the navbar checkbox to close it for small screens.
    *
@@ -16,7 +14,7 @@
 </script>
 
 <div>
-  <a href={resolve(getRelativeURL())}>
+  <a href={getRelativeURL()}>
     <img src={getRelativeURL("icons/favicon/favicon.svg")} alt="Website icon" />
     <p>IronBatman2715.GitHub.io</p>
   </a>
@@ -45,8 +43,8 @@
         <li>
           <a
             class={subURL === pageMetadata.subURL ? "active" : ""}
-            href={resolve(getRelativeURL(subURL))}
-            on:click={resetNavToggle}
+            href={getRelativeURL(subURL)}
+            onclick={resetNavToggle}
           >
             {name}
           </a>

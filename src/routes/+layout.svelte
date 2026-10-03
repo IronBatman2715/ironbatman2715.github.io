@@ -1,20 +1,21 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
+  let { children } = $props();
 
-  import "$lib/styles/color.css";
-  import "$lib/styles/main.css";
+  import "#lib/styles/color.css";
+  import "#lib/styles/main.css";
 
-  import Header from "$lib/components/Header/Header.svelte";
-  import Footer from "$lib/components/Footer.svelte";
-  import { getPageMetadataBySubURL, type PageMetadata } from "$lib/utils/routing";
+  import Header from "#lib/components/Header/Header.svelte";
+  import Footer from "#lib/components/Footer.svelte";
+  import { getPageMetadataBySubURL, type PageMetadata } from "#lib/utils/routing.js";
 
-  let pageMetadata: PageMetadata;
-  $: {
-    const currentSubURL = $page.route.id || "";
+  let pageMetadata: PageMetadata = $derived(updatePageMetadata());
+  function updatePageMetadata(): PageMetadata {
+    const currentSubURL = page.route.id || "";
 
     const maybePageMetadata = getPageMetadataBySubURL(currentSubURL);
     if (maybePageMetadata) {
-      pageMetadata = maybePageMetadata;
+      return maybePageMetadata;
     } else {
       throw new ReferenceError(`Cannot fetch page metadata! Add entry for "${currentSubURL}" in src/utils/routing.ts`);
     }
@@ -30,10 +31,10 @@
 
 {#if pageMetadata.subURL !== ""}
   <main id="content">
-    <slot />
+    {@render children()}
   </main>
 {:else}
-  <slot />
+  {@render children()}
 {/if}
 
 <Footer />

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { getRelativeURL, type PageMetadata } from "$lib/utils/routing";
+  import { getRelativeURL, type PageMetadata } from "#lib/utils/routing";
 
-  export let pageMetadata: PageMetadata;
+  let { pageMetadata }: { pageMetadata: PageMetadata } = $props();
 </script>
 
 <div

@@ -1,9 +1,9 @@
 <script lang="ts">
-  import type { PageMetadata } from "$lib/utils/routing";
+  import type { PageMetadata } from "#lib/utils/routing.js";
   import Navbar from "./Navbar.svelte";
   import PageTitleBanner from "./PageTitleBanner.svelte";
 
-  export let pageMetadata: PageMetadata;
+  let { pageMetadata }: { pageMetadata: PageMetadata } = $props();
 </script>
 
 <header class={pageMetadata.name}>

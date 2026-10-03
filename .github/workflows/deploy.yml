@@ -16,17 +16,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           lfs: true
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
+      - name: Setup pnpm and Node
+        uses: pnpm/setup@v3
         with:
-          node-version: 24 # current LTS
-
-      - name: Install node packages
-        run: npm i
+          runtime: node@24 # current LTS
+          version: ^12.9.0
+          cache: true
 
       - name: Setup env var(s)
         run: |
@@ -40,10 +39,10 @@ jobs:
           fi
 
       - name: Build website
-        run: npm run build
+        run: pnpm run build
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: build # entire build is within this directory
           retention-days: 7 # retain artifact for a week, for debugging
@@ -59,4 +58,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

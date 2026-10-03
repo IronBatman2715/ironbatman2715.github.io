@@ -1,4 +1,4 @@
-import { base } from "$app/paths";
+import { resolve } from "$app/paths";
 
 export type PageMetadata = {
   name: string;
@@ -26,13 +26,13 @@ export const pageMetadatas: PageMetadata[] = [
 
 /** Get url relative to project base url */
 export function getRelativeURL(subURL = "/"): string {
-  let fullRelativeURL = base;
+  let fullRelativeURL = "";
 
   if (!subURL.startsWith("/")) fullRelativeURL += "/";
 
   fullRelativeURL += subURL;
 
-  return fullRelativeURL;
+  return resolve(fullRelativeURL);
 }
 
 export function getPageMetadataBySubURL(subURL: string): PageMetadata | null {
